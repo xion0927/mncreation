@@ -9,3 +9,7 @@ coverage/
 .env.*
 !.env.example
 next-env.d.ts
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/

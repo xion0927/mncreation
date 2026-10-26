@@ -12,7 +12,7 @@ export default function Home() {
             楽譜プレイヤー
           </h1>
           <p className="mt-3 max-w-2xl text-stone-600">
-            MusicXMLを読み込み、楽譜を見ながらピアノ音で再生できます。
+            MusicXMLやPDFの楽譜を読み込み、ピアノ音で再生できます。
           </p>
         </header>
         <ScorePlayer />

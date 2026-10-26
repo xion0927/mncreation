@@ -18,3 +18,49 @@ body {
 button {
   cursor: pointer;
 }
+
+@media print {
+  @page {
+    size: auto;
+    margin: 12mm;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  body * {
+    visibility: hidden !important;
+  }
+
+  .print-score,
+  .print-score * {
+    visibility: visible !important;
+  }
+
+  .print-score {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    max-width: none;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .print-hide {
+    display: none !important;
+  }
+
+  .score-viewport {
+    max-height: none !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    padding: 0 !important;
+  }
+
+  .score-viewport svg {
+    max-width: 100% !important;
+    height: auto !important;
+    break-inside: avoid;
+  }
+}
